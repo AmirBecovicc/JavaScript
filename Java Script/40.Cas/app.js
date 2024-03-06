@@ -27,3 +27,18 @@
 
 //     result.textContent = calculation;
 // };
+
+// napraviti input element i dodati na njega event listener za change event
+// u callbecku za event listener prikazati na konzoli vrednost inputa
+
+const input1 = document.querySelector('#test');
+
+input1.addEventListener("input", (e) => {
+    // console.log(input1.value)
+    console.log(e.target.value)
+})
+
+// napraviti skriptu koja pita korisnika sa prompt funkcijom da unese svoje godine
+// i onda odgovara ne ekranu u nekom p elementu sa tim da li je on u penziji ili tinejdzer ili obicni covek
+
+prompt("Unesite svoje godine");
